@@ -78,3 +78,4 @@ app.get("/get/:id", async (request, response) => {
 app.listen(process.env.PORT || PORT, () => {
     console.log(`Server is running.`)
 })
+
