@@ -29,7 +29,13 @@ app.use(cors())
 
 // //app requests and responses
 
-
+app.get('/',(request, response)=>{
+    db.collection('movies')
+    .then(data => {
+        response.render('index.html', { info: data })
+    })
+    .catch(error => console.error(error))
+})
 // //give data while serching
 app.get("/search", async(request, response) => {
     try{
