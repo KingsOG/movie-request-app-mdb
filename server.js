@@ -30,7 +30,7 @@ app.use(cors())
 // //app requests and responses
 
 app.get('/',(request, response)=>{
-    db.collection('movies')
+    db.collection('movies').toArray()
     .then(data => {
         response.render('index.html', { info: data })
     })
