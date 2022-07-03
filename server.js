@@ -1,11 +1,3 @@
-// const express = require('express')
-// const app = express()
-// const cors = require('cors')
-// const {MongoClient, ObjectId} = require('mongodb')
-// const { urlencoded } = require('body-parser')
-// const { response } = require('express')
-// require('dotenv').config()
-// const PORT = 8000
 const express = require('express')
 const app = express()
 const cors = require('cors')
