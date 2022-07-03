@@ -29,6 +29,9 @@ app.use(cors())
 
 // //app requests and responses
 
+app.get('/', function(request, response){
+    res.sendFile(__dirname + '/index.html');
+});
 // //give data while serching
 app.get("/search", async(request, response) => {
     try{
