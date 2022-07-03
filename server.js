@@ -74,6 +74,6 @@ app.get("/get/:id", async (request, response) => {
 })
 
 //setting up the server
-app.listen(process.env.PORT || 8000, () => {
+app.listen(process.env.PORT || PORT, () => {
     console.log(`Server is running.`)
 })
