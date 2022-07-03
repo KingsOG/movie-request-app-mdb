@@ -8,19 +8,35 @@
     <link rel="stylesheet" href="style.css">
     <script src="//code.jquery.com/jquery-1.12.4.js"></script>
     <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <title>Document</title>
+    <title>Movie Finder App</title>
 </head>
 <body>
-    <section class = 'ui-widget'>
-        <label for="title">
-            Title:
-        </label>
-        <input id="title">
-        <ul id="cast"></ul>
-    </section>
-    <section>
-        <img src="">
-    </section>
+    
+    <header>
+        <div class="header-logo">Movie Madness</div>
+        
+        <div>
+            <form  id="form">
+                <input type="text" placeholder="Search" id="title" class="search">
+            </form>
+        </div>
+        
+    </header>
+           <main class="main">
+            <section class="image">
+                <img src="">
+            </section>
+            <seection class="cast">
+                <ul id="cast"></ul>
+            </seection>
+
+            <section class="plot">
+                <span id="plot"></span>
+            </section>
+           </main>
+           
+       
+    
     <script src = '/main.js'></script>
 </body>
 </html>

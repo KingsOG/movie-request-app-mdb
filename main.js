@@ -19,6 +19,8 @@ $(document).ready(function () {
             fetch(`http://localhost:8000/get/${ui.item.id}`)
                 .then(result => result.json())
                 .then(result => {
+                    $('#plot').append(result.plot)
+
                     $('#cast').empty()
                     result.cast.forEach(cast =>
                         {
