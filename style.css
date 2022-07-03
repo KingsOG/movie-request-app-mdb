@@ -29,6 +29,10 @@ header{
     margin-left: 40px;
 }
 
+label {
+    color: #7fffd4;
+}
+
 .search{
     background-color: transparent;
     border: 2px solid var(--primary-color);
@@ -66,17 +70,28 @@ input {
     height: 35px;
 }
 
+/* .cast {
+    display: flex;
+    align-content: flex-start;
+} */
+
 #cast li {
     list-style: none;
-    margin-left: 10px
+    margin-left: 10px;
+   
 }
 
 .main {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 }
 .image {
     margin-left: 50px;
     margin-top: 20px;
+}
+
+.plot {
+    max-width: 325px;
+    margin-left: 50px;
 }
