@@ -35,13 +35,10 @@ app.use(express.static('public'))
 //     response.sendFile(__dirname + '/index.html')
 // })
 
-// app.get('/',(request, response)=>{
-//     db.collection('rappers').find()
-//     .then(data => {
-//         response.render('index.ejs', { $search: data })
-//     })
-//     .catch(error => console.error(error))
-// })
+app.get("/", (request, response) => {
+    response.sendFile("index.html", { root: "public" });
+  });
+
 // //give data while serching
 app.get("/search", async(request, response) => {
     try{
