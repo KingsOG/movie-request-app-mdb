@@ -7,7 +7,6 @@ const { request } = require('http')
 require('dotenv').config()
 const PORT = 8000
 
-
 // // //declaring database variables
 let db,
     dbConnectionStr = process.env.DB_STRING,
