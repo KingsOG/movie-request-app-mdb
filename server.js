@@ -12,7 +12,6 @@ let db,
     dbConnectionStr = process.env.DB_STRING,
     dbName = 'sample_mflix',
     collection
-
 //connecting to the database
 MongoClient.connect(dbConnectionStr)
     .then(client => {
